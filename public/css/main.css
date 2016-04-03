@@ -1,0 +1,18 @@
+nav {
+  background-color: #ffa500;
+}
+
+input[type=text]:focus{
+  border-color: #00daff;
+  color: #2500ff;
+}
+
+#search {
+  margin-top: 12px;
+  float: right;
+}
+
+#glif {
+  margin-top: 20px;
+  float: right;
+}
