@@ -16,3 +16,10 @@ input[type=text]:focus{
   margin-top: 20px;
   float: right;
 }
+/*end of nav styling*/
+
+/*About link test can remove once content is designed*/
+h3 {
+  padding-top: 200px;
+}
+/*End of test for about link*/
