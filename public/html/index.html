@@ -9,14 +9,14 @@
       <!-- end of bootstrap -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       <!-- end of awesome icon bootstrap -->
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
       <!-- end of angular -->
       <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
       <!-- end of jquery -->
       <link rel="stylesheet" href="css/main.css">
       <!-- end of css -->
     </head>
-  <body ng-controller="BitController">
+  <body ng-controller="bitController">
     <nav class="navbar navbar-right navbar-fixed-top">
       <div class="container-fluid">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -30,12 +30,22 @@
       </div>
     </nav>
     <!-- end of navbar -->
-    <div class="container">
+    <div id="form" class="container">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-
+        <form ng-submit='getData(everything)'>
+          <Label>Search For Exchanges</Label>
+          <br>
+          <!-- <input type="text" placeholder="Exchanges" ng-model='everything'> -->
+          <button class="btn btn-md" ng-click='getData("all")'>All Data</button>
+          <button class="btn btn-md" ng-click='getData("ticker")'>Ticker Data</button>
+          <button class="btn btn-md" ng-click='getData("exchanges")'>Exchange Data</button>
+          <button class="btn btn-md" ng-click='getData("ticker/global")'>Global Data</button>
+        </form>
       </div>
     </div>
+    <!-- <button ng-click='getData("ticker")'>Ticker Data</button> -->
     <!-- body parser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
